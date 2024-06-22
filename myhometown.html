@@ -1,0 +1,147 @@
+<!-- 这是一个文档类型声明，指定了文档是使用HTML5标准编写的。 -->
+<!DOCTYPE html>
+<!-- 这是HTML文档的根元素，lang="en"属性指定了文档的语言为英语。 -->
+<html lang="en">
+
+<head>
+    <!-- 定义了网页的标题，显示在浏览器的标签页上。 -->
+    <title>myhometown</title>
+    <!-- 指定了文档的字符编码为UTF-8，支持多种语言和特殊字符。 -->
+    <meta charset="UTF-8">
+    <!-- 提供了网页的描述信息，用于搜索引擎优化（SEO）。 -->
+    <meta name="description" content="Your description">
+    <!-- 定义了网页的关键词，也用于搜索引擎优化。 -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 指定了网页的作者信息。 -->
+    <meta name="author" content="Your name">
+    <!-- 设置了网页的视口（viewport）属性，使网页在不同设备上能够自适应显示。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 通过链接引入外部CSS样式表文件。 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/myhometown.css">
+</head>
+
+<body>
+    <!-- 包含网页主要内容的容器 -->
+    <div class="main">
+        <!-- 视频背景容器 -->
+        <div class="video-box">
+            <!-- 背景视频，设置为自动播放、循环播放、静音 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4"
+                tabindex="-1" muted="muted"></video>
+            <!-- 页面主要内容容器 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <!-- Header -->
+                <header>
+                    <!-- 内容容器 -->
+                    <div class="inner">
+                        <!-- 网站logo，链接回首页 -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航栏 -->
+                        <nav>
+                            <!-- 导航菜单列表 -->
+                            <ul>
+                                <!-- 个人主页导航项 -->
+                                <li><a href="index.html">个人主页</a></li>
+                                <!-- 兴趣爱好导航项 -->
+                                <li><a href="myhobby.html">兴趣爱好</a></li>
+                                <!-- 个人经历导航项 -->
+                                <li><a href="experience.html">个人经历</a></li>
+                                <!-- 我的学校导航项 -->
+                                <li><a href="myschool.html">我的学校</a></li>
+                                <!-- 当前选中项，我的家乡导航项 -->
+                                <li class="current"><a href="myhometown.html">我的家乡</a></li>
+                                <!-- 在线留言导航项 -->
+                                <li><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- 页面主要内容区 -->
+                <!-- content -->
+                <section id="content">
+                    <!-- 可滚动的内容区域，分为article#slide和article#buttons -->
+                    <div class="scrollable-content">
+                         <!-- 图片轮播文章 -->
+                        <article id="slide">
+                               <!-- 轮播图片容器 -->
+                            <div class="item" style="background-image: url(./images/home1.jpg);">
+                                  <!-- 图片描述容器 -->
+                                <div class="cont">
+                                    
+                                    <!-- 图片标题 -->
+                                    <div class="name">恭城</div>
+                                       <!-- 图片描述 -->
+                                    <div class="des">
+                                        恭城瑶族自治县隶属于广西壮族自治区桂林市，位于广西东北部，桂林市东南部，东与富川瑶族自治县及湖南江永县交界，南与钟山县、平乐县毗邻，西接阳朔县、灵川县，北临灌阳县，县城距桂林市108公里。
+                                    </div>
+                                </div>
+                            </div>
+                                   <!-- 更多轮播图片容器，省略 -->
+                            <div class="item" style="background-image: url(./images/home2.jpg);">
+                                <div class="cont">
+                                    <div class="name">美景-桂林山水</div>
+                                    <div class="des">桂林山水，甲天下美景，峰青水碧，倒映如画，舟行碧波上，人在画中游，山川灵秀，石峰奇绝，绿树环绕，云雾缭绕，自然风光旖旎，令人流连忘返。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(./images/home3.jpg);">
+                                <div class="cont">
+                                    <div class="name">文化-关公庙会</div>
+                                    <div class="des">
+                                        恭城瑶族自治县的关公庙会是一年一度的民俗文化盛事，主要在农历六月二十四日关公诞辰时举行。活动集祭祀、巡游、表演于一体，瑶族人民身着民族服饰，通过唱山歌、跳长鼓舞等形式，表达对忠义象征关公的敬仰，展现浓厚的民族风情和地方特色。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(./images/home4.jpg);">
+                                <div class="cont">
+                                    <div class="name">水果-恭城柿饼</div>
+                                    <div class="des">
+                                        恭城瑶族自治县的关公庙会是一年一度的民俗文化盛事，主要在农历六月二十四日关公诞辰时举行。活动集祭祀、巡游、表演于一体，瑶族人民身着民族服饰，通过唱山歌、跳长鼓舞等形式，表达对忠义象征关公的敬仰，展现浓厚的民族风情和地方特色。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(./images/home5.jpg);">
+                                <div class="cont">
+                                    <div class="name">风味-恭城油茶</div>
+                                    <div class="des">
+                                        恭城油茶，广西瑶族自治县传统美食，选用优质茶叶、山泉水精心熬制，加入生姜、蒜米等辅料捣碎烹煮，味道清香微辣，口感独特。饮用时配以炒米、花生、玉米等小吃，既是日常饮品也是待客佳品，体现了瑶族人民的生活智慧和饮食文化，已成为恭城的标志性风味之一。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(./images/home6.jpg);">
+                                <div class="cont">
+                                    <div class="name">古迹-文庙武庙</div>
+                                    <div class="des">
+                                        恭城文庙与武庙，坐落于广西恭城瑶族自治县，是明清古建筑群中的瑰宝。文庙庄严肃穆，供奉孔子，弘扬儒家文化，飞檐斗拱，彩绘精美；武庙则威严壮观，祭祀关公，彰显忠义精神，石雕木刻，技艺精湛。两庙并存，象征着文武双全的理想追求，不仅是历史文化的见证，也是当地民众精神信仰的重要场所，共同构成了恭城深厚的历史文化底蕴。
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                    <!-- 控制按钮文章 -->
+                    <article class="buttons">
+                        <!-- 上一个按钮 -->
+                        <div class="s_button">&lt;</div>
+                        <!-- 下一个按钮 -->
+                        <div class="s_button">&gt;</div>
+                    </article>
+                </div>
+            </section>
+            <!-- 页面底部 -->
+            <footer>
+                <!-- 版权信息 -->
+                <div><p>&copy; 2024, 中南财经政法大学
+                    <br>
+                    所属权归信息管理与信息系统22级唐虹所有</p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+<!-- 脚本文件，用于处理页面的交互逻辑 -->
+<script src="./js/script.js"></script>
+</body>
+</html>

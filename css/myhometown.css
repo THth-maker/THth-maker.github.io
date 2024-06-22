@@ -1,0 +1,226 @@
+/* 设置section#content的样式 */
+section#content {
+    /* 隐藏超出容器的内容 */
+    overflow: hidden;
+    /* 设置宽度为1000像素 */
+    width: 1000px;
+    /* 设置高度为480像素 */
+    height: 480px;
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 使其垂直居中 */
+    top: 50%;
+    /* 使其水平居中 */
+    left: 50%;
+    /* 通过transform属性实现精确居中 */
+    transform: translate(-50%, -50%);
+    /* 设置上边距为20像素 */
+    margin-top: 20px;
+}
+
+/* 设置id为'slide'的元素样式 */
+#slide {
+    /* 设置宽度为最大内容宽度 */
+    width: max-content;
+    /* 设置上边距为50像素 */
+    margin-top: 50px;
+}
+
+/* 设置class为'item'的元素样式 */
+.item {
+    /* 设置宽度为150像素 */
+    width: 150px;
+    /* 设置高度为230像素 */
+    height: 230px;
+    /* 背景图片居中 */
+    background-position: 50%, 50%;
+    /* 设置为行内块级元素 */
+    display: inline-block;
+    /* 背景图片覆盖整个容器 */
+    background-size: cover;
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 使其垂直居中 */
+    top: 50%;
+    /* 通过transform属性实现精确居中 */
+    transform: translateY(-50%);
+    /* 设置圆角 */
+    border-radius: 20px;
+    /* 设置阴影效果 */
+    box-shadow: 0 10px 50px rgb(89, 89, 89);
+    /* 添加过渡效果 */
+    transition: .5s;
+}
+
+/* 设置class为'item'的元素中第一个和第二个子元素的样式 */
+.item:nth-child(1),
+.item:nth-child(2) {
+    /* 设置为顶部定位 */
+    top: 0;
+    /* 设置为左边定位 */
+    left: 0;
+    /* 设置宽度为100% */
+    width: 100%;
+    /* 设置高度为100% */
+    height: 100%;
+    /* 无需额外的translateY */
+    transform: translateY(0);
+}
+
+/* 设置class为'item'的元素中第三个子元素的样式 */
+.item:nth-child(3) {
+    /* 设置左边偏移量 */
+    left: 40%;
+}
+
+/* 设置class为'item'的元素中第四个子元素的样式 */
+.item:nth-child(4) {
+    /* 设置左边偏移量 */
+    left: calc(40% + 220px);
+}
+
+/* 设置class为'item'的元素中第五个子元素的样式 */
+.item:nth-child(5) {
+    /* 设置左边偏移量 */
+    left: calc(40% + 440px);
+}
+
+/* 设置class为'item'的元素中第六个子元素的样式 */
+.item:nth-child(6) {
+    /* 设置左边偏移量 */
+    left: calc(40% + 660px);
+    /* 设置不透明度为0 */
+    opacity: 0;
+}
+
+/* 设置class为'item'的元素中class为'cont'的子元素的样式 */
+.item .cont {
+    /* 设置宽度为300像素 */
+    width: 300px;
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 设置左边偏移量 */
+    left: 200px;
+    /* 设置顶部偏移量 */
+    top: 25%;
+    /* 通过transform属性实现精确居中 */
+    transform: translate(-50%);
+    /* 设置字体 */
+    font-family: system-ui;
+    /* 设置文字颜色 */
+    color: aliceblue;
+    /* 默认不显示 */
+    display: none;
+}
+
+/* 设置class为'item'的元素中第二个子元素class为'cont'的子元素的样式 */
+.item:nth-child(2) .cont{
+    /* 设置显示 */
+    display: block;
+}
+
+/* 设置class为'item'的元素中class为'name'的子元素的样式 */
+.item .name {
+    /* 设置字体大小 */
+    font-size: 40px;
+    /* 设置字体粗细 */
+    font-weight: 900;
+    /* 设置不透明度为0 */
+    opacity: 0;
+    /* 设置动画 */
+    animation: showcont 1s ease-in-out 1 forwards;
+}
+
+/* 设置class为'item'的元素中class为'des'的子元素的样式 */
+.item .des{
+    /* 设置上下边距 */
+    margin: 20px 0;
+    /* 设置不透明度为0 */
+    opacity: 0;
+    /* 设置动画 */
+    animation: showcont 1s ease-in-out 0.3s 1 forwards;
+}
+
+/* 设置class为'item'的元素中button子元素的样式 */
+.item button{
+    /* 设置内边距 */
+    padding: 10px 20px;
+    /* 移除边框 */
+    border: none;
+    /* 设置不透明度为0 */
+    opacity: 0;
+    /* 设置动画 */
+    animation: showcont 1s ease-in-out 0.6s 1 forwards;
+}
+
+/* 设置动画关键帧 */
+@keyframes showcont{
+    /* 动画开始状态 */
+    from{
+        /* 设置不透明度为0 */
+        opacity: 0;
+        /* 设置垂直移动 */
+        transform: translateY(100px);
+        /* 设置模糊效果 */
+        filter: blur(20px);
+    }to{
+        /* 动画结束状态 */
+        /* 设置不透明度为1 */
+        opacity: 1;
+        /* 设置垂直移动为0 */
+        transform: translateY(0);
+        /* 移除模糊效果 */
+        filter: blur(0);
+    }
+}
+
+/* 设置class为'buttons'的元素样式 */
+.buttons{
+    /* 设置宽度为100% */
+    width: 100%;
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 设置底部偏移量 */
+    bottom: 50px;
+    /* 设置左边偏移量 */
+    margin-left: -38px;
+    /* 设置底部偏移量 */
+    margin-bottom: -20px;
+    /* 设置文本居中 */
+    text-align: center;
+}
+
+/* 设置class为's_button'的元素样式 */
+.s_button{
+    /* 设置为行内块级元素 */
+    display: inline-block;
+    /* 设置宽度和高度 */
+    width: 40px;
+    height: 40px;
+    /* 设置行内元素垂直居中 */
+    line-height: 38px;
+    /* 设置文本居中 */
+    text-align: center;
+    /* 设置文字颜色 */
+    color: #1f1e1e;
+    /* 设置背景颜色 */
+    background-color: rgba(246, 242, 242, 0.527);
+    /* 设置字体大小 */
+    font-size: 20px;
+    /* 设置圆角 */
+    border-radius: 50%;
+    /* 设置字体粗细 */
+    font-weight: bold;
+    /* 设置左右边距 */
+    margin: 0 25px;
+    /* 添加过渡效果 */
+    transition: .5s;
+}
+
+/* 设置class为's_button'的元素的:hover伪类样式 */
+.s_button:hover{
+    /* 设置鼠标悬停时的光标 */
+    cursor: pointer;
+    /* 改变背景颜色 */
+    background-color: white;
+}

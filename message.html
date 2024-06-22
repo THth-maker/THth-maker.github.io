@@ -1,0 +1,116 @@
+<!-- 声明文档类型为HTML5 -->
+<!DOCTYPE html>
+<!-- HTML根元素，定义文档语言为英语 -->
+<html lang="en">
+
+<head>
+    <!-- 设置页面标题 -->
+    <title>message</title>
+    <!-- 设置文档字符编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 提供页面描述信息，用于SEO -->
+    <meta name="description" content="Your description">
+    <!-- 设置页面关键词，用于SEO -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 设置页面作者 -->
+    <meta name="author" content="Your name">
+    <!-- 设置视口属性，确保页面在不同设备上正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部通用CSS样式表 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 引入本页面的CSS样式表 -->
+    <link rel="stylesheet" href="./css/message.css">
+</head>
+
+<body>
+    <!-- 主体内容容器 -->
+    <div class="main">
+        <!-- 视频背景容器 -->
+        <div class="video-box">
+            <!-- 自动播放、循环播放、静音的背景视频 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4" tabindex="-1" muted="muted"></video>
+            <!-- 页面内容容器 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <header>
+                    <div class="inner">
+                        <!-- Logo与首页链接 -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航栏 -->
+                        <nav>
+                            <ul>
+                                <!-- 链接到个人主页 -->
+                                <li><a href="index.html">个人主页</a></li>
+                                <!-- 链接到兴趣爱好页面 -->
+                                <li><a href="myhobby.html">兴趣爱好</a></li>
+                                <!-- 链接到个人经历页面 -->
+                                <li><a href="experience.html">个人经历</a></li>
+                                <!-- 链接到学校信息页面 -->
+                                <li><a href="myschool.html">我的学校</a></li>
+                                <!-- 链接到家乡信息页面 -->
+                                <li><a href="myhometown.html">我的家乡</a></li>
+                                <!-- 当前页面，链接到在线留言页面 -->
+                                <li class="current"><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- 页面主要内容 -->
+                <section id="content">
+                    <!-- 可滚动的内容区域 -->
+                    <div class="scrollable-content">
+                        <!-- 在线留言表单 -->
+                        <form action="" method="post" class="elegant-aero">
+                            <!-- 表单标题 -->
+                            <h1>欢迎来到我的留言板
+                                <span>将想要对我说的话填入以下表单</span>
+                            </h1>
+                            <!-- 用户名输入框 -->
+                            <label>
+                                <span>你的名字 :</span>
+                                <input id="name" type="text" name="name"  />
+                            </label>
+                            <!-- 邮箱输入框 -->
+                            <label>
+                                <span>你的邮箱 :</span>
+                                <input id="email" type="email" name="email"/>
+                            </label>
+                            <!-- 留言信息输入框 -->
+                            <label>
+                                <span>留言信息 :</span>
+                                <textarea id="message" name="message" ></textarea>
+                            </label>
+                            <!-- 语言选择下拉框 -->
+                            <label>
+                                <span>语言选择 :</span>
+                                <select name="selection">
+                                    <option value="Job Inquiry">中文</option>
+                                    <option value="General Question">英文</option>
+                                </select>
+                            </label>
+                            <!-- 发送按钮 -->
+                            <label>
+                                <span>&nbsp;</span>
+                                <input type="button" class="button" value="发送" />
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                <!-- 页面底部 -->
+                <footer>
+                    <div>
+                        <!-- 版权信息 -->
+                        <p>&copy; 2024, 中南财经政法大学
+                            <br>
+                            所属权归信息管理与信息系统22级唐虹所有
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

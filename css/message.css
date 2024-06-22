@@ -1,0 +1,157 @@
+/* 定义.elegant-aero类的样式，用于留言表单的整体布局和外观 */
+.elegant-aero {
+    /* 设置左右内边距为页面宽度的10%，实现居中对齐 */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* 设置顶部外边距 */
+    margin-top: 23px;
+    /* 设置宽度为80% */
+    width: 80%;
+    /* 添加内阴影和位移阴影，增强视觉效果 */
+    box-shadow: inset 0 0 10px #f9efef, 0 0 10px rgba(197, 196, 196, 0.5);
+    /* 设置内边距 */
+    padding: 20px 20px 20px 20px;
+    /* 设置字体为微软雅黑，大小为16px */
+    font: 16px '微软雅黑';
+    /* 设置字体粗细 */
+    font-weight:700;
+    /* 设置文字颜色 */
+    color: #f5f2f2;
+    /* 设置圆角 */
+    border-radius: 15px;
+}
+
+/* 定义.elegant-aero类下的h1元素的样式 */
+.elegant-aero h1 {
+    /* 设置字体为微软雅黑，大小为20px */
+    font: 20px '微软雅黑';
+    /* 设置字体粗细 */
+    font-weight:700;
+    /* 设置内边距 */
+    padding: 10px 10px 10px 20px;
+    /* 设置为块级元素 */
+    display: block;
+    /* 设置背景颜色 */
+    background-color:  rgba(243, 235, 235, 0.202);
+    /* 设置底部边框 */
+    border-bottom: 1px solid rgba(120, 180, 224, 0.5);
+    /* 设置外边距 */
+    margin: -20px -20px 15px;
+    /* 设置圆角 */
+    border-radius: 15px;
+    /* 设置文字颜色 */
+    color: #090909;
+}
+
+/* 定义.elegant-aero类下的h1元素的子span元素样式 */
+.elegant-aero h1>span {
+    /* 设置为块级元素 */
+    display: block;
+    /* 设置字体大小 */
+    font-size: 13px;
+}
+
+/* 定义.elegant-aero类下的label元素样式 */
+.elegant-aero label {
+    /* 设置为块级元素 */
+    display: block;
+    /* 设置外边距 */
+    margin: 0px 0px 5px;
+}
+
+/* 定义.elegant-aero类下的label元素的子span元素样式 */
+.elegant-aero label>span {
+    /* 设置为左浮动 */
+    float: left;
+    /* 设置宽度 */
+    width: 20%;
+    /* 设置文本右对齐 */
+    text-align: right;
+    /* 设置右侧内边距 */
+    padding-right: 15px;
+    /* 设置顶部外边距 */
+    margin-top: 10px;
+    /* 设置字体粗细 */
+    font-weight: bold;
+}
+
+/* 定义.elegant-aero类下的各种输入框和选择框的样式 */
+.elegant-aero input[type="text"],
+.elegant-aero input[type="email"],
+.elegant-aero input[type="message"],
+.elegant-aero textarea,
+.elegant-aero select {
+    /* 设置文字颜色 */
+    color: #090909;
+    /* 设置宽度 */
+    width: 70%;
+    /* 设置内边距 */
+    padding: 0px 0px 0px 5px;
+    /* 设置边框 */
+    border: 1px solid #C5E2FF;
+    /* 设置背景颜色 */
+    background-color:  rgba(243, 235, 235, 0.202);
+    /* 移除轮廓线 */
+    outline: 0;
+    /* 添加内阴影 */
+    -webkit-box-shadow: inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    /* 设置高度 */
+    height: 30px;
+    /* 设置行高 */
+    line-height: 15px;
+    /* 设置外边距 */
+    margin: 2px 6px 16px 0px;
+}
+
+/* 定义.elegant-aero类下的textarea元素的样式 */
+.elegant-aero textarea {
+    /* 设置高度 */
+    height: 100px;
+    /* 设置内边距 */
+    padding: 5px 0px 0px 5px;
+    /* 设置宽度 */
+    width: 70%;
+}
+
+/* 定义.elegant-aero类下的select元素的样式 */
+.elegant-aero select {
+    /* 设置背景颜色 */
+    background-color:  rgba(243, 235, 235, 0.202);
+    /* 移除默认的下拉箭头 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* 设置文本缩进 */
+    text-indent: 0.01px;
+    /* 设置文本溢出隐藏 */
+    text-overflow: '';
+    /* 设置宽度 */
+    width: 70%;
+}
+
+/* 定义.elegant-aero类下的.button类的样式 */
+.elegant-aero .button {
+    /* 设置内边距 */
+    padding: 10px 30px 10px 30px;
+    /* 设置背景颜色 */
+    background: #83cfed;
+    /* 移除边框 */
+    border: none;
+    /* 设置文字颜色 */
+    color: #FFF;
+    /* 添加阴影 */
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    /* 设置文字阴影 */
+    text-shadow: 1px 1px 1px #5079A3;
+    /* 设置圆角 */
+    border-radius: 15px;
+}
+
+/* 定义.elegant-aero类下的.button类的鼠标悬停样式 */
+.elegant-aero .button:hover {
+    /* 设置背景颜色 */
+    background: #91d1eb;
+}

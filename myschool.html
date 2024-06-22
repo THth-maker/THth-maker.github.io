@@ -1,0 +1,107 @@
+<!-- HTML5文档类型声明 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 页面标题 -->
+    <title>myschool</title>
+    <!-- 设置文档编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 页面描述，用于SEO -->
+    <meta name="description" content="Your description">
+    <!-- 页面关键词，用于SEO -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 作者信息 -->
+    <meta name="author" content="Your name">
+    <!-- 视口设置，确保在移动设备上正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入通用CSS样式表 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 引入本页面的CSS样式表 -->
+    <link rel="stylesheet" href="./css/myschool.css">
+</head>
+
+<body>
+    <!-- 主要内容区域 -->
+    <div class="main">
+        <!-- 视频背景盒子 -->
+        <div class="video-box">
+            <!-- 循环播放的视频背景 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4"
+                tabindex="-1" muted="muted"></video>
+            <!-- 内容盒子 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <header>
+                    <!-- 内部内容区域 -->
+                    <div class="inner">
+                        <!-- 页头Logo -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航菜单 -->
+                        <nav>
+                            <ul>
+                                <!-- 导航条目 -->
+                                <li><a href="index.html">个人主页</a></li>
+                                <li><a href="myhobby.html">兴趣爱好</a></li>
+                                <li><a href="experience.html">个人经历</a></li>
+                                <!-- 当前选中项 -->
+                                <li class="current"><a href="myschool.html">我的学校</a></li>
+                                <li><a href="myhometown.html">我的家乡</a></li>
+                                <li><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- content -->
+                <!-- 页面主要内容 -->
+                <section id="content">
+                    <!-- 可滚动的内容区域 -->
+                    <div class="scrollable-content">
+                        <!-- 文章 -->
+                        <article>
+                            <!-- 学校名称标题 -->
+                            <h2>中南财经政法大学</h2>
+                            <!-- 图片轮播控件 -->
+                            <input type="radio" name="photo" id="photo1" checked hidden>
+                            <label for="photo1"></label>
+
+                            <input type="radio" name="photo" id="photo2" checked hidden>
+                            <label for="photo2"></label>
+
+                            <input type="radio" name="photo" id="photo3" checked hidden>
+                            <label for="photo3"></label>
+
+                            <input type="radio" name="photo" id="photo4" checked hidden>
+                            <label for="photo4"></label>
+
+                            <input type="radio" name="photo" id="photo5" checked hidden>
+                            <label for="photo5"></label>
+                            <!-- 图片列表 -->
+                            <ul>
+                                <!-- 图片条目 -->
+                                <li><img src="./images/zuel1.jpg" alt=""></li>
+                                <li><img src="./images/zuel2.jpg" alt=""></li>
+                                <li><img src="./images/zuel3.jpg" alt=""></li>
+                                <li><img src="./images/zuel4.jpg" alt=""></li>
+                                <li><img src="./images/zuel5.jpg" alt=""></li>
+                            </ul>
+                        </article>
+                        <!-- 链接至学校官网 -->
+                        <h2><a href="https://www.zuel.edu.cn/">点击了解学校更多信息</a></h2>
+                    </div>
+                </section>
+                <!-- 页面底部 -->
+                <footer>
+                    <!-- 版权信息 -->
+                    <div><p>&copy; 2024, 中南财经政法大学
+                        <br>
+                        所属权归信息管理与信息系统22级唐虹所有</p></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!-- 这是一个文档类型声明，指定了文档是使用HTML5标准编写的。 -->
+<!DOCTYPE html>
+<!-- HTML文档的根元素，lang="en"属性指定了文档的语言为英语。 -->
+<html lang="en">
+
+<head>
+    <!-- 定义了网页的标题，显示在浏览器的标签页上。 -->
+    <title>myhobby</title>
+    <!-- 指定了文档的字符编码为UTF-8，支持多种语言和特殊字符。 -->
+    <meta charset="UTF-8">
+    <!-- 提供了网页的描述信息，用于搜索引擎优化（SEO）。 -->
+    <meta name="description" content="Your description">
+    <!-- 定义了网页的关键词，也用于搜索引擎优化。 -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 指定了网页的作者信息。 -->
+    <meta name="author" content="Your name">
+    <!-- 设置了网页的视口（viewport）属性，使网页在不同设备上能够自适应显示。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部CSS样式表文件 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/myhobby.css">
+</head>
+
+<body>
+    <!-- 主要内容容器 -->
+    <div class="main">
+        <!-- 视频背景盒子 -->
+        <div class="video-box">
+            <!-- 背景视频 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4"
+                tabindex="-1" muted="muted"></video>
+            <!-- 内容盒子 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <header>
+                    <!-- 内部布局 -->
+                    <div class="inner">
+                        <!-- 页头logo和链接 -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航菜单 -->
+                        <nav>
+                            <ul>
+                                <!-- 导航菜单项 -->
+                                <li><a href="index.html">个人主页</a></li>
+                                <li class="current"><a href="myhobby.html">兴趣爱好</a></li>
+                                <li><a href="experience.html">个人经历</a></li>
+                                <li><a href="myschool.html">我的学校</a></li>
+                                <li><a href="myhometown.html">我的家乡</a></li>
+                                <li><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- 页面主要内容区域 -->
+                <section id="content">
+                    <!-- 可滚动的内容 -->
+                    <div class="scrollable-content">
+                        <!-- 拍摄兴趣展示 -->
+                        <h2>拍摄：享受一切美好事物~</h2>
+                        <!-- 图片展示区域 -->
+                        <article id="item">
+                            <!-- 多张照片 -->
+                            <div class="photo">
+                                <img src="./images/拍摄1.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄2.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄3.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄4.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄5.jpg" alt="">
+                            </div>
+                        </article>
+                        <article id="item">
+                            <div class="photo">
+                                <img src="./images/拍摄6.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄7.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄8.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄9.jpg" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./images/拍摄10.jpg" alt="">
+                            </div>
+                        </article>
+                        <!-- 对周杰伦的兴趣展示 -->
+                        <h2 id="h2-1"></h2>
+                        <article id="cont-3">
+                            <!-- 周杰伦介绍和图片 -->
+                            <div id="cont-3-1">
+                                <!-- 周杰伦的介绍 -->
+                                <!-- 图片链接 -->
+                                <a class="show" rel="Jay" title="Another Word for Desperate">
+                                    <span class="showhim">
+                                        <p>周杰伦，华语流行乐坛的巨星，以其独特的音乐风格、精湛的创作才华和卓越的演唱实力闻名。他的歌曲融合了中国传统元素与现代流行，开创了华语音乐的新纪元。周杰伦不仅是一位才华横溢的音乐人，更是一位引领潮流的艺术家，深受全球华人喜爱。
+                                        </p>
+                                    </span>
+                                    <img src="./images/Jay.jpg" alt="" />
+                                </a>
+                            </div>
+                            <!-- 周杰伦歌曲列表 -->
+                            <div id="cont-3-2">
+                                <h2>听Jay的音乐~</h2>
+                                <ul>
+                                    <li class="song">天青色等烟雨，而我在等你----------------------------《青花瓷》</li>
+                                    <li class="song">从前从前，有个人爱你很久----------------------------《晴天》</li>
+                                    <li class="song">而我独缺你一生的了解--------------------------------《兰亭序》</li>
+                                    <li class="song">你出现在我诗的每一页--------------------------------《七里香》</li>
+                                    <li class="song">我的祷告终于有了回音--------------------------------《我是如此相信》</li>
+                                    <li class="song">不要哭，让萤火虫带着你逃跑---------------------------《稻香》</li>
+                                    <li class="song">这街上太拥挤，太多人有秘密---------------------------《我不配》</li>
+                                    <li class="song">我们的开始，是很长的电影-----------------------------《最长的电影》</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- footer -->
+                <!-- 页面底部 -->
+                <footer>
+                    <!-- 版权信息 -->
+                    <div>
+                        <p>&copy; 2024, 中南财经政法大学
+                            <br>
+                            所属权归信息管理与信息系统22级唐虹所有
+                        </p>
+                    </div>
+                </footer>
+                <!-- footer -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

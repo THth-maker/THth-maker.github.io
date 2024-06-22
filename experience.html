@@ -1,0 +1,137 @@
+<!-- 文档类型声明，指定使用HTML5标准 -->
+<!DOCTYPE html>
+<!-- HTML根元素，定义文档语言为英语 -->
+<html lang="en">
+
+<head>
+    <!-- 网页标题 -->
+    <title>experience</title>
+    <!-- 字符编码设定为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- SEO描述信息 -->
+    <meta name="description" content="Your description">
+    <!-- SEO关键词 -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 作者信息 -->
+    <meta name="author" content="Your name">
+    <!-- 视口设置，确保在移动设备上的正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/experience.css">
+</head>
+
+<body>
+    <!-- 主体内容容器 -->
+    <div class="main">
+        <!-- 视频背景容器 -->
+        <div class="video-box">
+            <!-- 自动播放循环的背景视频 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4" tabindex="-1" muted="muted"></video>
+            <!-- 内容盒子 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <header>
+                    <div class="inner">
+                        <!-- 网站logo和链接 -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航菜单 -->
+                        <nav>
+                            <ul>
+                                <!-- 首页链接 -->
+                                <li><a href="index.html">个人主页</a></li>
+                                <!-- 兴趣爱好页面链接 -->
+                                <li><a href="myhobby.html">兴趣爱好</a></li>
+                                <!-- 当前页面链接，高亮显示 -->
+                                <li class="current"><a href="experience.html">个人经历</a></li>
+                                <!-- 学校页面链接 -->
+                                <li><a href="myschool.html">我的学校</a></li>
+                                <!-- 家乡页面链接 -->
+                                <li><a href="myhometown.html">我的家乡</a></li>
+                                <!-- 留言板页面链接 -->
+                                <li><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- 主要内容区 -->
+                <section id="content">
+                    <!-- 可滚动的内容区域 -->
+                    <div class="scrollable-content">
+                        <!-- 第一部分：学校工作经历 -->
+                        <article id="cont-1">
+                            <table>
+                                <!-- 表格标题 -->
+                                <caption>学校工作经历</caption>
+                                <!-- 表头 -->
+                                <tr>
+                                    <th>担任职务</th>
+                                    <th>任职时间</th>
+                                    <th>工作内容</th>
+                                    <th>所获成果</th>
+                                </tr>
+                                <!-- 数据行 -->
+                                <tr>
+                                    <!-- 居中对齐的职务 -->
+                                    <td class="center">校志协事务部干事院志协事务部干事</td>
+                                    <!-- 居中对齐的时间 -->
+                                    <td class="center">2022.9-2023.9</td>
+                                    <!-- 左对齐的工作内容 -->
+                                    <td class="left">协助15场以上大小型志愿活动开展；撰写5篇以上志愿者版策划案；积极主动完成各项工作</td>
+                                    <!-- 左对齐的成果 -->
+                                    <td class="left">校级志愿者协会工作中绩效排名前三</td>
+                                </tr>
+                                <!-- 更多数据行 -->
+                                <tr>
+                                    <!-- 居中对齐的职务 -->
+                                    <td class="center">院志协事务部部长</td>
+                                    <!-- 居中对齐的时间 -->
+                                    <td class="center">2023.9-2024.9</td>
+                                    <!-- 左对齐的工作内容 -->
+                                    <td class="left">统筹协调事务部工作运行，共组织了30场以上的志愿活动</td>
+                                    <!-- 左对齐的成果 -->
+                                    <td class="left">获校级优秀学生干部、校级优秀学生志愿者</td>
+                                </tr>
+                            </table>
+                        </article>
+                        <!-- 第二部分：参加赛事及所获荣誉 -->
+                        <article id="cont-2">
+                            <table>
+                                <!-- 表格标题 -->
+                                <caption>参加赛事及所获荣誉</caption>
+                                <!-- 图片列 -->
+                                <tr>
+                                    <th><img src="./images/game1.jpg" alt=""></th>
+                                    <th><img src="./images/game2.jpg" alt=""></th>
+                                    <th><img src="./images/game3.jpg" alt=""></th>
+                                    <th><img src="./images/game4.png" alt=""></th>
+                                </tr>
+                                <!-- 成果列 -->
+                                <tr class="awards">
+                                    <!-- 居中对齐的奖项 -->
+                                    <td class="center">希贤杯”校园舞蹈大赛优秀奖</td>
+                                    <!-- 居中对齐的奖项 -->
+                                    <td class="center">互联网+校一等奖</td>
+                                    <!-- 左对齐的奖项 -->
+                                    <td class="left">三创赛校二等奖</td>
+                                    <!-- 左对齐的奖项 -->
+                                    <td class="left">学校第三十六届博文杯立项</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                </section>
+                <!-- 页面底部 -->
+                <footer>
+                    <!-- 版权信息 -->
+                    <div><p>&copy; 2024, 中南财经政法大学<br>所属权归信息管理与信息系统22级唐虹所有</p></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!-- 这是一个文档类型声明，指定了文档是使用HTML5标准编写的。 -->
+<!DOCTYPE html>
+<!-- 这是HTML文档的根元素，lang="en"属性指定了文档的语言为英语。 -->
+<html lang="en">
+
+<head>
+    <!-- 定义了网页的标题，显示在浏览器的标签页上。 -->
+    <title>index</title>
+    <!-- 指定了文档的字符编码为UTF-8，支持多种语言和特殊字符。 -->
+    <meta charset="UTF-8">
+    <!-- 提供了网页的描述信息，用于搜索引擎优化（SEO）。 -->
+    <meta name="description" content="Your description">
+    <!-- 定义了网页的关键词，也用于搜索引擎优化。 -->
+    <meta name="keywords" content="Your keywords">
+    <!-- 指定了网页的作者信息。 -->
+    <meta name="author" content="Your name">
+    <!-- 设置了网页的视口（viewport）属性，使网页在不同设备上能够自适应显示。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入另一个CSS文件，通常用于通用页面的样式定制。 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 通过链接引入了一个名为"index.css"的CSS样式表文件。 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 包含网页主要内容的容器 main -->
+    <div class="main">
+        <!-- 视频背景容器 -->
+        <div class="video-box">
+            <!-- 背景视频，设置为自动播放、循环播放、静音 -->
+            <video class="video-background" preload="auto" loop playsinline autoplay src="./images/星空.mp4" tabindex="-1"
+                muted="muted"></video>
+            <!-- 页面主要内容容器 -->
+            <div id="box">
+                <!-- 页面头部 -->
+                <header>
+                    <!-- 内容容器 -->
+                    <div class="inner">
+                        <!-- 网站logo，链接回首页 -->
+                        <h1 class="logo"><a href="./html/index.html">欢迎来到我的宇宙~</a></h1>
+                        <!-- 导航栏 -->
+                        <nav>
+                            <!-- 导航菜单列表 -->
+                            <ul>
+                                <!-- 当前选中项 -->
+                                <li class="current"><a href="index.html">个人主页</a></li>
+                                <!-- 其他导航项 -->
+                                <li><a href="myhobby.html">兴趣爱好</a></li>
+                                <li><a href="experience.html">个人经历</a></li>
+                                <li><a href="myschool.html">我的学校</a></li>
+                                <li><a href="myhometown.html">我的家乡</a></li>
+                                <li><a href="message.html">在线留言</a></li>
+                            </ul>
+                        </nav>
+                        <!-- 清除浮动 -->
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- 页面主要内容区 -->
+                <section id="content">
+                    <!-- 可滚动的内容区域,分为article#me 和article#mains -->
+                    <div class="scrollable-content" >
+                        <!-- 个人信息文章 -->
+                        <article id="me">
+                            <!-- 个人头像 -->
+                            <img src="./images/headimg.jpg" alt="" class="headimg">
+                            <!-- 联系方式列表 -->
+                            <ul class="contacts">
+                                <!-- 姓名 -->
+                                <li><strong>姓名：</strong>唐虹</li>
+                                <!-- 性别 -->
+                                <li><strong>性别：</strong>女</li>
+                                <!-- 年龄 -->
+                                <li><strong>年龄：</strong>20岁</li>
+                                <!-- 专业 -->
+                                <li><strong>专业：</strong>信息管理与信息系统</li>
+                                <!-- 学校 -->
+                                <li><strong>学校：</strong>中南财经政法大学</li>
+                                <!-- 邮箱 -->
+                                <li><strong>邮箱：</strong>2965221576@qq.com</li>
+                                <!-- 手机 -->
+                                <li><strong>手机：</strong>15623902055</li>
+                                <!-- 个人简历链接 -->
+                                <li id="word"><a href="./images/唐虹_个人简历.pdf">个人简历电子版</a></li>
+                            </ul>
+                        </article>
+                        <!-- 关于我文章 -->
+                        <article id="mains">
+                            <!-- 标题 -->
+                            <h1>关于我</h1>
+                            <!-- 描述列表 -->
+                            <ol>
+                                <!-- 第一项描述 -->
+                                <li class="introduce">
+                                    思想上，我始终严格要求自己，树立坚定的理想信念。积极进取，乐观向上，勇于自我批评，树立正确的人生观和价值观。热爱祖国，热爱人民，遵守国家的法律法规，具有良好的思想素质；
+                                </li>
+                                <!-- 第二项描述 -->
+                                <li class="introduce">学习上，我坚持学业为重，始终严格要求自己，勤奋好学，态度端正，不忘初心。珍惜学习机会，并且积极参与各类赛事，锻炼自己的各方面能力；
+                                </li>
+                                <!-- 第三项描述 -->
+                                <li class="introduce">
+                                    工作上，我大一加入校志协事务部以及院志协事务部，大二任职院级事务部主要负责人，极大地锻炼了我的实践能力，增加自己的团队协作能力和沟通能力；</li>
+                                <!-- 第四项描述 -->
+                                <li class="introduce">生活上，我乐于助人，真诚待人，善于沟通，生活充实而有条理，积极参与各类志愿活动，在方方面面中意识到做任何事情要积极主动，责任心强。
+                                </li>
+                            </ol>
+                        </article>
+                    </div>
+                </section>
+                <!-- 页面底部 -->
+                <footer>
+                    <!-- 版权信息 -->
+                    <div>
+                        <p>&copy; 2024, 中南财经政法大学
+                            <br>
+                            所属权归信息管理与信息系统22级唐虹所有
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

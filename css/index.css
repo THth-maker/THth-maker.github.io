@@ -1,0 +1,94 @@
+/* 选择id为'me'的article元素，设置背景色、边框、阴影、宽度、高度、浮动、内外边距和圆角 */
+article#me {
+    background-color: rgba(243, 235, 235, 0.202); /* 设置背景颜色 */
+    border: 2px solid #babbbd; /* 设置边框 */
+    box-shadow: inset 0 0 10px #f9efef, 0 0 10px rgba(197, 196, 196, 0.5); /* 设置内阴影和外阴影 */
+    width: 30%; /* 设置宽度 */
+    height: 95%; /* 设置高度 */
+    float: left; /* 设置左浮动 */
+    margin: 0px 3% 0px 0; /* 设置上下左右外边距 */
+    border-radius: 30px; /* 设置圆角 */
+    padding: 20px; /* 设置内边距 */
+    margin-top: 10px; /* 设置顶部外边距 */
+}
+
+/* 选择id为'me'的article元素内部的class为'headimg'的img元素，设置宽度、高度、圆角和左右外边距 */
+article#me .headimg {
+    width: 60%; /* 设置宽度 */
+    height: 35%; /* 设置高度 */
+    border-radius: 50%; /* 设置圆形圆角 */
+    margin-left: 18%; /* 设置左侧外边距 */
+    margin-right: 18%; /* 设置右侧外边距 */
+}
+
+/* 选择class为'contacts'的ul元素，设置宽度、高度和左右外边距 */
+.contacts {
+    width: 80%; /* 设置宽度 */
+    height: 60%; /* 设置高度 */
+    margin-left: 10%; /* 设置左侧外边距 */
+    margin-right: 10%; /* 设置右侧外边距 */
+}
+
+/* 选择class为'contacts'的ul元素内部的li元素，设置宽度、溢出处理、底部外边距、颜色、左边内边距和文本对齐方式 */
+.contacts li {
+    width: 100%; /* 设置宽度 */
+    overflow: hidden; /* 设置溢出隐藏 */
+    margin-bottom: 15px; /* 设置底部外边距 */
+    color: black; /* 设置颜色 */
+    padding-left: 5px; /* 设置左边内边距 */
+    text-align: center; /* 设置文本居中对齐 */
+}
+
+/* 选择class为'contacts'的ul元素内部的li元素内的strong元素，设置字体粗细、字体大小、浮动、宽度和颜色 */
+.contacts li strong {
+    font-weight: bold; /* 设置字体粗细 */
+    font-size: 16px; /* 设置字体大小 */
+    float: left; /* 设置左浮动 */
+    width: 60px; /* 设置宽度 */
+    color: black; /* 设置颜色 */
+}
+
+/* 选择id为'word'的li元素，设置字体粗细、字体大小和宽度 */
+#word {
+    font-weight: bold; /* 设置字体粗细 */
+    font-size: 20px; /* 设置字体大小 */
+    width: 240px; /* 设置宽度 */
+}
+
+/* 选择id为'word'的li元素内的a元素，设置颜色 */
+#word a {
+    color: rgb(249, 249, 249); /* 设置颜色 */
+}
+
+/* 选择id为'mains'的article元素，设置背景色、边框、阴影、宽度、高度、浮动、圆角和顶部外边距 */
+article#mains {
+    background-color: rgba(243, 235, 235, 0.202); /* 设置背景颜色 */
+    border: 2px solid #babbbd; /* 设置边框 */
+    box-shadow: inset 0 0 10px #f9efef, 0 0 10px rgba(197, 196, 196, 0.5); /* 设置内阴影和外阴影 */
+    width: 61%; /* 设置宽度 */
+    height: 95%; /* 设置高度 */
+    float: left; /* 设置左浮动 */
+    border-radius: 30px; /* 设置圆角 */
+    margin-top: 10px; /* 设置顶部外边距 */
+}
+
+/* 选择id为'mains'的article元素内的h1元素，设置顶部外边距、文本对齐方式和底部外边距 */
+article#mains h1 {
+    margin-top: 28px; /* 设置顶部外边距 */
+    text-align: center; /* 设置文本居中对齐 */
+    margin-bottom: 3%; /* 设置底部外边距 */
+}
+
+/* 选择ol元素，设置列表样式类型和内边距 */
+ol {
+    list-style-type: disc; /* 设置列表样式类型 */
+    padding: 10px 30px 30px 30px; /* 设置上下左右内边距 */
+}
+
+/* 选择class为'introduce'的元素，设置字体大小、底部外边距和行高 */
+.introduce {
+    font-size: 16px; /* 设置字体大小 */
+    margin-bottom: 30px; /* 设置底部外边距 */
+    line-height: 30px; /* 设置行高 */
+}
+

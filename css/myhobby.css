@@ -1,0 +1,150 @@
+/* CSS样式定义，应用于<h2>标题元素 */
+h2 {
+    font-family: '微软雅黑'; /* 设置字体为微软雅黑 */
+    font-size: 20px; /* 设置字体大小为20像素 */
+    font-weight: 700; /* 设置字体加粗 */
+    font-style: italic; /* 斜体字体 */
+    color: aliceblue; /* 文字颜色为淡白色 */
+    margin-top: 10px; /* 上边距为10像素 */
+    border-bottom: 5px solid rgba(252, 251, 251, 0.5); /* 底部边框为半透明的白色 */
+}
+
+/* 特定ID h2#h2-1的样式，增加顶部填充 */
+h2#h2-1{
+    padding-top: 10px; /* 顶部填充10像素 */
+}
+
+/* Flexbox布局的容器，用于展示项目 */
+article#item{
+    display: flex; /* 使用Flexbox布局 */
+    position: relative; /* 相对定位 */
+    justify-content: center; /* 主轴居中对齐 */
+    align-items: center; /* 交叉轴居中对齐 */
+    margin-left: 5%; /* 左侧边距为5% */
+    margin-right: 5%; /* 右侧边距为5% */
+    width: 90%; /* 宽度占90% */
+    height: 96%; /* 高度占96% */
+    border-radius: 30px; /* 圆角 */
+    transform-style: preserve-3d; /* 保留3D变换上下文 */
+    margin-top: 20px; /* 顶部边距为20像素 */
+}
+
+/* 定义项目中的图片框样式 */
+article#item .photo{
+    width: 20%; /* 占容器宽度的20% */
+    height: 300px; /* 固定高度为300像素 */
+    transition: .5s; /* 任何适用的CSS属性变化将在0.5秒内平滑过渡 */
+    position: relative; /* 相对定位 */
+}
+
+/* 图片框内的图片样式 */
+article#item .photo img{
+    position:absolute; /* 绝对定位，相对于最近的非static定位祖先元素 */
+    width: 100%; /* 图片宽度占父元素的100% */
+    height: 100%; /* 图片高度占父元素的100% */
+    border-radius: 15px; /* 图片圆角 */
+}
+
+/* 当鼠标悬停在项目容器上时的样式 */
+article#item:hover > :not(:hover){ /* 选择器匹配除当前悬停元素以外的兄弟元素 */
+    margin: 0 -10px; /* 左右边距为负值，使元素向内收缩 */
+    filter: drop-shadow(0 0 25px #000) drop-shadow(0 0 45px #000); /* 添加黑色阴影 */
+    transform: perspective(500px) rotateY(45deg) scale(0.95); /* 透视变换并旋转Y轴45度，缩放至95% */
+}
+
+/* 当鼠标悬停在一个图片框上时，其他图片框的样式 */
+article#item .photo:hover ~ .photo{ /* 选择器匹配紧随悬停元素后的兄弟元素 */
+    transform: perspective(500px) rotateY(-45deg) scale(0.95); /* 变换与上述相反，产生立体翻转效果 */
+}
+
+/* 当鼠标悬停在一个图片框上时的样式 */
+article#item .photo:hover{
+    transform: perspective(500px) rotateY(0) scale(1.25); /* 放大图片框至125%，无旋转 */
+}
+
+/* 定义#cont-3容器的样式 */
+#cont-3 {
+    /* 内阴影 */
+    box-shadow: inset 0 0 5px #a09e9e; 
+    /* 外阴影 */
+    box-shadow: inset 0 0 10px #e8e7e7, 0 0 10px rgba(197, 196, 196, 0.5); /* 双重阴影效果 */
+    width: 90%; /* 宽度占90% */
+    margin-left: 5%; /* 左侧边距为5% */
+    margin-right: 5%; /* 右侧边距为5% */
+    border-radius: 15px; /* 圆角 */
+    margin-top: 40px; /* 顶部边距为40像素 */
+    clear: both; /* 清除浮动 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+/* 定义#cont-3-1子容器的样式 */
+#cont-3-1{
+    width: 30%; /* 宽度占30% */
+    border-radius: 15px; /* 圆角 */
+    float: left; /* 浮动到左侧 */
+    background: none; /* 背景透明 */
+    display: block; /* 显示为块级元素 */
+    position: relative; /* 相对定位 */
+    height: 400px; /* 高度为400像素 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+/* 定义#cont-3-1容器内的<a>标签下的<span>元素的初始隐藏样式 */
+#cont-3-1 a span{
+    display: none; /* 默认隐藏 */
+    position: absolute; /* 绝对定位 */
+    top: 0; /* 顶部位置为0 */
+    left: 0; /* 左侧位置为0 */
+    width: 100%; /* 宽度占100% */
+    height: 100%; /* 高度占100% */
+    z-index: 100; /* 层叠顺序 */
+}
+
+/* 定义#cont-3-1容器内的<a>标签下的具有showhim类的<span>元素的样式 */
+#cont-3-1 a span.showhim {  
+    background-color: rgba(189, 183, 183, 0.6); /* 半透明灰色背景 */
+}  
+
+/* 定义#cont-3-1容器内的<a>标签下的具有showhim类的<span>元素下的<p>元素的样式 */
+#cont-3-1 a span.showhim p{
+    font-size: 16px; /* 字体大小为16像素 */
+    font-weight: 700; /* 字体加粗 */
+    text-align: center; /* 文本居中对齐 */
+    line-height: 40px; /* 行高为40像素 */
+    color: black; /* 文字颜色为黑色 */
+    align-items: center; /* 对齐方式为居中 */
+    padding: 15px 20px 20px 15px; /* 内边距 */
+}
+
+/* 定义#cont-3-1容器内的<a>标签下的<img>元素的样式 */
+#cont-3-1 a img{
+    width: 100%; /* 图片宽度占100% */
+    height: 100%; /* 图片高度占100% */
+    display: block; /* 显示为块级元素 */
+}
+
+/* 当鼠标悬停在#cont-3-1容器内的<a>标签上时的样式 */
+#cont-3-1  a:hover span {  
+    display: block; /* 显示 */
+}  
+
+/* 定义#cont-3-2子容器的样式 */
+#cont-3-2{
+    width: 70%; /* 宽度占70% */
+    border-radius: 15px; /* 圆角 */
+    float: left; /* 浮动到左侧 */
+}
+
+/* 定义#cont-3-2容器内的<ul>元素的样式 */
+#cont-3-2 ul{
+    width: 90%; /* 宽度占90% */
+    margin: 0 10% 0 10%; /* 上下边距为0，左右边距各为10% */
+}
+
+/* 定义#cont-3-2容器内的<li>元素的样式，当它们具有.song类时 */
+#cont-3-2 li.song{
+    font-size: 16px; /* 字体大小为16像素 */
+    font-family: "微软雅黑"; /* 字体为微软雅黑 */
+    font-weight: 700; /* 字体加粗 */
+    padding: 12px; /* 内边距 */
+}

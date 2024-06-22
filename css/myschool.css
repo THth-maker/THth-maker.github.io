@@ -1,0 +1,138 @@
+/* 定义#content节的样式，使用弹性布局（Flexbox）使其内容居中对齐，并在内容超过容器高度时提供垂直滚动条 */
+section#content {
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin-top: 5px; /* 上边距 */
+    overflow-y: auto; /* 如果内容超出，垂直方向上显示滚动条 */
+}
+
+/* 定义article元素的样式，设置宽度、高度以及相对定位 */
+article {
+    text-align: center; /* 文本居中对齐 */
+    position: relative; /* 相对定位 */
+    width: 900px; /* 固定宽度 */
+    height: 480px; /* 固定高度 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    padding-top: 30px; /* 顶部内边距 */
+}
+
+/* 修改article内部h2元素的文本对齐方式为左对齐 */
+article h2{
+    text-align: left;
+}
+
+/* 定义无序列表ul的样式，设置宽度、边距、过渡动画 */
+article ul {
+    margin: 10px 0; /* 上下边距 */
+    padding: 0; /* 不使用默认填充 */
+    width: calc(900px * 5); /* 计算宽度为900px的五倍 */
+    transition: 0.5s; /* 平滑过渡效果 */
+}
+
+/* 定义列表项li的样式，设置宽度、高度、字体大小、行高和背景颜色 */
+article li {
+    float: left; /* 浮动排列 */
+    width: 900px; /* 固定宽度 */
+    height: 480px; /* 固定高度 */
+    list-style: none; /* 移除列表项符号 */
+    line-height: 500px; /* 行高 */
+    font-size: 50px; /* 字体大小 */
+}
+
+/* 设置列表项内的图片样式，确保图片填充整个列表项 */
+article li img{
+    width: 100%; /* 图片宽度占满列表项 */
+    height: 100%; /* 图片高度占满列表项 */
+}
+
+/* 分别设置五个列表项的背景颜色 */
+article li:nth-child(1) { /* 第一个列表项 */
+    background-color: rgb(250, 60, 240);
+}
+article li:nth-child(2) { /* 第二个列表项 */
+    background-color: rgb(71, 66, 66);
+}
+article li:nth-child(3) { /* 第三个列表项 */
+    background-color: rgb(0, 255, 157);
+}
+article li:nth-child(4) { /* 第四个列表项 */
+    background-color: rgb(136, 0, 255);
+}
+article li:nth-child(5) { /* 第五个列表项 */
+    background-color: rgb(240, 182, 182);
+}
+
+/* 定义label元素的样式，用于图片轮播的控制点 */
+article label[for^="photo"]{
+    position: absolute; /* 绝对定位 */
+    top: 480px; /* 距离顶部的位置 */
+    width: 20px; /* 控制点宽度 */
+    height: 20px; /* 控制点高度 */
+    background-color: rgba(250, 250, 245, 0.486); /* 半透明背景色 */
+    border-radius: 50%; /* 圆形外观 */
+    cursor: pointer; /* 改变鼠标指针形状 */
+    transition: 0.3s; /* 平滑过渡效果 */
+}
+
+/* 设置不同label元素的左侧位置，用于图片轮播控制点的排布 */
+article label[for="photo1"]{
+    left: 44%;
+}
+article label[for="photo2"]{
+    left: 47%;
+}
+article label[for="photo3"]{
+    left: 50%;
+}
+article label[for="photo4"]{
+    left: 53%;
+}
+article label[for="photo5"]{
+    left: 56%;
+}
+
+/* 当不同的radio按钮被选中时，调整图片列表的左边距，实现轮播效果 */
+#photo1:checked ~ ul{
+    margin-left:0;
+}
+#photo2:checked ~ ul{
+    margin-left:-900px;
+}
+#photo3:checked ~ ul{
+    margin-left:-1800px;
+}
+#photo4:checked ~ ul{
+    margin-left:-2700px;
+}
+#photo5:checked ~ ul{
+    margin-left:-3600px;
+}
+
+/* 当不同的radio按钮被选中时，改变相应label元素的背景色 */
+#photo1:checked ~ label[for^="photo1"]{
+    background-color: aliceblue;
+}
+#photo2:checked ~ label[for^="photo2"]{
+    background-color: aliceblue;
+}
+#photo3:checked ~ label[for^="photo3"]{
+    background-color: aliceblue;
+}
+#photo4:checked ~ label[for^="photo4"]{
+    background-color: aliceblue;
+}
+#photo5:checked ~ label[for^="photo5"]{
+    background-color: aliceblue;
+}
+
+/* 设置h2元素中的链接颜色和下划线去除 */
+h2 a{
+    color: aliceblue;
+    border-bottom: none;
+}
+
+/* 设置#content中的h2元素文本居中 */
+#content h2{
+    text-align: center;
+}
